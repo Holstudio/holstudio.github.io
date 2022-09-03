@@ -1,0 +1,254 @@
+ErrorDocument 403 /page11756017.html
+ErrorDocument 404 /page11756017.html
+
+DirectoryIndex page15811917.html
+
+RewriteEngine On
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =http
+RewriteRule ^(.*)$ https://holstudio\.art/$1 [R=301,L]
+
+RewriteCond %{HTTP:X-Forwarded-Proto} =https
+RewriteCond %{HTTP_HOST} ^www\.holstudio.art [NC]
+RewriteRule ^(.*)$ https://holstudio\.art/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} /robots.txt
+RewriteCond "%{DOCUMENT_ROOT}/robots_%{HTTP_HOST}.txt" -f
+RewriteRule ^(.*)$ robots_%{HTTP_HOST}.txt [NC,L]
+RewriteRule ^ru$ page11746290.html [NC]
+RewriteRule ^ru/$ page11746290.html [NC]
+
+RewriteRule ^ru/privacy-policy$ page11756277.html [NC]
+RewriteRule ^ru/privacy-policy/$ page11756277.html [NC]
+
+RewriteRule ^ru/about$ page11862344.html [NC]
+RewriteRule ^ru/about/$ page11862344.html [NC]
+
+RewriteRule ^lessons$ page21724455.html [NC]
+RewriteRule ^lessons/$ page21724455.html [NC]
+
+RewriteRule ^ru/faq$ page11862507.html [NC]
+RewriteRule ^ru/faq/$ page11862507.html [NC]
+
+RewriteRule ^p$ page23867294.html [NC]
+RewriteRule ^p/$ page23867294.html [NC]
+
+RewriteRule ^ru/online-school$ page12151978.html [NC]
+RewriteRule ^ru/online-school/$ page12151978.html [NC]
+
+RewriteRule ^ru/courses$ page12163780.html [NC]
+RewriteRule ^ru/courses/$ page12163780.html [NC]
+
+RewriteRule ^j$ page23923660.html [NC]
+RewriteRule ^j/$ page23923660.html [NC]
+
+RewriteRule ^ru/contacts$ page12165975.html [NC]
+RewriteRule ^ru/contacts/$ page12165975.html [NC]
+
+RewriteRule ^page404$ page11756017.html [NC]
+RewriteRule ^page404/$ page11756017.html [NC]
+
+RewriteRule ^ru/blog$ page12177535.html [NC]
+RewriteRule ^ru/blog/$ page12177535.html [NC]
+
+RewriteRule ^ru/demo-course$ page13667930.html [NC]
+RewriteRule ^ru/demo-course/$ page13667930.html [NC]
+
+RewriteRule ^ru/offline$ page17861925.html [NC]
+RewriteRule ^ru/offline/$ page17861925.html [NC]
+
+RewriteRule ^ru/animals$ page18985586.html [NC]
+RewriteRule ^ru/animals/$ page18985586.html [NC]
+
+RewriteRule ^ru/purchase-page$ page20347102.html [NC]
+RewriteRule ^ru/purchase-page/$ page20347102.html [NC]
+
+RewriteRule ^ru/terms-of-service$ page11776613.html [NC]
+RewriteRule ^ru/terms-of-service/$ page11776613.html [NC]
+
+RewriteRule ^painting$ page11862627.html [NC]
+RewriteRule ^painting/$ page11862627.html [NC]
+
+RewriteRule ^graphic-arts$ page11864170.html [NC]
+RewriteRule ^graphic-arts/$ page11864170.html [NC]
+
+RewriteRule ^applied-arts$ page11864181.html [NC]
+RewriteRule ^applied-arts/$ page11864181.html [NC]
+
+RewriteRule ^packages$ page11866547.html [NC]
+RewriteRule ^packages/$ page11866547.html [NC]
+
+RewriteRule ^ru/thank-you$ page12405505.html [NC]
+RewriteRule ^ru/thank-you/$ page12405505.html [NC]
+
+RewriteRule ^ru/thanks$ page12412147.html [NC]
+RewriteRule ^ru/thanks/$ page12412147.html [NC]
+
+RewriteRule ^dinozavry-iz-plastilina$ page13160088.html [NC]
+RewriteRule ^dinozavry-iz-plastilina/$ page13160088.html [NC]
+
+RewriteRule ^dinozavry-iz-plastilina-private$ page13160431.html [NC]
+RewriteRule ^dinozavry-iz-plastilina-private/$ page13160431.html [NC]
+
+RewriteRule ^subscription$ page13162245.html [NC]
+RewriteRule ^subscription/$ page13162245.html [NC]
+
+RewriteRule ^zenart-private$ page13264879.html [NC]
+RewriteRule ^zenart-private/$ page13264879.html [NC]
+
+RewriteRule ^test$ page13302643.html [NC]
+RewriteRule ^test/$ page13302643.html [NC]
+
+RewriteRule ^kollazh$ page13307309.html [NC]
+RewriteRule ^kollazh/$ page13307309.html [NC]
+
+RewriteRule ^liniya-simmetrii$ page13307427.html [NC]
+RewriteRule ^liniya-simmetrii/$ page13307427.html [NC]
+
+RewriteRule ^dekorativnoe-tvorchestvo$ page13307504.html [NC]
+RewriteRule ^dekorativnoe-tvorchestvo/$ page13307504.html [NC]
+
+RewriteRule ^zenart$ page13307579.html [NC]
+RewriteRule ^zenart/$ page13307579.html [NC]
+
+RewriteRule ^proporcii-tela$ page13307956.html [NC]
+RewriteRule ^proporcii-tela/$ page13307956.html [NC]
+
+RewriteRule ^zhivotnye$ page13313249.html [NC]
+RewriteRule ^zhivotnye/$ page13313249.html [NC]
+
+RewriteRule ^nasekomye$ page13313310.html [NC]
+RewriteRule ^nasekomye/$ page13313310.html [NC]
+
+RewriteRule ^avtobus-i-podlodka$ page13313375.html [NC]
+RewriteRule ^avtobus-i-podlodka/$ page13313375.html [NC]
+
+RewriteRule ^grafika$ page13313476.html [NC]
+RewriteRule ^grafika/$ page13313476.html [NC]
+
+RewriteRule ^pejzazh$ page13313664.html [NC]
+RewriteRule ^pejzazh/$ page13313664.html [NC]
+
+RewriteRule ^serviz-i-kulinariya$ page13313728.html [NC]
+RewriteRule ^serviz-i-kulinariya/$ page13313728.html [NC]
+
+RewriteRule ^zhivopis$ page13313779.html [NC]
+RewriteRule ^zhivopis/$ page13313779.html [NC]
+
+RewriteRule ^kollazh-private$ page13314617.html [NC]
+RewriteRule ^kollazh-private/$ page13314617.html [NC]
+
+RewriteRule ^liniya-simmetrii-private$ page13314678.html [NC]
+RewriteRule ^liniya-simmetrii-private/$ page13314678.html [NC]
+
+RewriteRule ^dekorativnoe-tvorchestvo-private$ page13314755.html [NC]
+RewriteRule ^dekorativnoe-tvorchestvo-private/$ page13314755.html [NC]
+
+RewriteRule ^grafika-private$ page13314814.html [NC]
+RewriteRule ^grafika-private/$ page13314814.html [NC]
+
+RewriteRule ^proporcii-tela-private$ page13314877.html [NC]
+RewriteRule ^proporcii-tela-private/$ page13314877.html [NC]
+
+RewriteRule ^nasekomye-private$ page13314913.html [NC]
+RewriteRule ^nasekomye-private/$ page13314913.html [NC]
+
+RewriteRule ^avtobus-i-podlodka-private$ page13314945.html [NC]
+RewriteRule ^avtobus-i-podlodka-private/$ page13314945.html [NC]
+
+RewriteRule ^zhivopis-private$ page13314987.html [NC]
+RewriteRule ^zhivopis-private/$ page13314987.html [NC]
+
+RewriteRule ^zhivotnye-private$ page13315091.html [NC]
+RewriteRule ^zhivotnye-private/$ page13315091.html [NC]
+
+RewriteRule ^pejzazh-private$ page13315126.html [NC]
+RewriteRule ^pejzazh-private/$ page13315126.html [NC]
+
+RewriteRule ^serviz-i-kulinariya-private$ page13315156.html [NC]
+RewriteRule ^serviz-i-kulinariya-private/$ page13315156.html [NC]
+
+RewriteRule ^subscription-2-weeks-private$ page13315410.html [NC]
+RewriteRule ^subscription-2-weeks-private/$ page13315410.html [NC]
+
+RewriteRule ^subscription-month-private$ page13315491.html [NC]
+RewriteRule ^subscription-month-private/$ page13315491.html [NC]
+
+RewriteRule ^subscription-3-months-private$ page13315510.html [NC]
+RewriteRule ^subscription-3-months-private/$ page13315510.html [NC]
+
+RewriteRule ^3courses$ page13337654.html [NC]
+RewriteRule ^3courses/$ page13337654.html [NC]
+
+RewriteRule ^supercourse$ page13337813.html [NC]
+RewriteRule ^supercourse/$ page13337813.html [NC]
+
+RewriteRule ^course-zhivopis$ page13371025.html [NC]
+RewriteRule ^course-zhivopis/$ page13371025.html [NC]
+
+RewriteRule ^course-grafika$ page13371200.html [NC]
+RewriteRule ^course-grafika/$ page13371200.html [NC]
+
+RewriteRule ^course-dekorativnoe-tvorchestvo$ page13371272.html [NC]
+RewriteRule ^course-dekorativnoe-tvorchestvo/$ page13371272.html [NC]
+
+RewriteRule ^3courses-ua$ page13562665.html [NC]
+RewriteRule ^3courses-ua/$ page13562665.html [NC]
+
+RewriteRule ^course-zhivopis-ua$ page13563656.html [NC]
+RewriteRule ^course-zhivopis-ua/$ page13563656.html [NC]
+
+RewriteRule ^course-grafika-ua$ page13570782.html [NC]
+RewriteRule ^course-grafika-ua/$ page13570782.html [NC]
+
+RewriteRule ^course-dekorativnoe-tvorchestvo-ua$ page13570914.html [NC]
+RewriteRule ^course-dekorativnoe-tvorchestvo-ua/$ page13570914.html [NC]
+
+RewriteRule ^demo-private$ page13653921.html [NC]
+RewriteRule ^demo-private/$ page13653921.html [NC]
+
+RewriteRule ^privacy-policy$ page15826809.html [NC]
+RewriteRule ^privacy-policy/$ page15826809.html [NC]
+
+RewriteRule ^terms-of-service$ page15827279.html [NC]
+RewriteRule ^terms-of-service/$ page15827279.html [NC]
+
+RewriteRule ^thanks$ page18103236.html [NC]
+RewriteRule ^thanks/$ page18103236.html [NC]
+
+RewriteRule ^about$ https://holstudio\.art/ru/about [R=301,NC]
+
+RewriteRule ^faq$ https://holstudio\.art/ru/faq [R=301,NC]
+
+RewriteRule ^online-school$ https://holstudio\.art/ru/online-school [R=301,NC]
+
+RewriteRule ^courses$ https://holstudio\.art/ru/courses [R=301,NC]
+
+RewriteRule ^contacts$ https://holstudio\.art/ru/contacts [R=301,NC]
+
+RewriteRule ^blog$ https://holstudio\.art/ru/blog [R=301,NC]
+
+RewriteRule ^demo-course$ https://holstudio\.art/ru/demo-course [R=301,NC]
+
+RewriteRule ^animals$ https://holstudio\.art/ru/animals [R=301,NC]
+
+RewriteRule ^purchase-page$ https://holstudio\.art/ru/purchase-page [R=301,NC]
+
+RewriteRule ^thank-you$ https://holstudio\.art/ru/thank-you [R=301,NC]
+
+RewriteRule ^thanks$ https://holstudio\.art/ru/thanks [R=301,NC]
+
+RewriteRule ^ua$ https://holstudio\.art/ [R=301,NC]
+
+RewriteRule ^ua/privacy-policy$ https://holstudio\.art/privacy-policy [R=301,NC]
+
+RewriteRule ^ua/terms-of-service$ https://holstudio\.art/terms-of-service [R=301,NC]
+
+RewriteRule ^ua/thanks$ https://holstudio\.art/thanks [R=301,NC]
+
+RewriteRule ^offline$ https://holstudio\.art/ru/offline [R=301,NC]
+
+RewriteRule ^members/ ma_start.html [NC]
+
+RewriteRule ^favicon.ico$ https://static.tildacdn.com/tild6532-6464-4230-b736-656631613832/ua-logo.ico [R=302,L]
+
